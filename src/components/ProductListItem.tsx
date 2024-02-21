@@ -10,7 +10,10 @@ type ProductListItemProp = {
 const ProductListItem = ({ product }: ProductListItemProp) => {
   return (
     <View style={styles.container}>
-      <Image source={{uri: product.image || defaultPizzaImg}} style={styles.image}/>
+      <Image source={{uri: product.image || defaultPizzaImg}} 
+      style={styles.image}
+      resizeMode='contain'
+      />
       <Text style={Object.assign({}, styles.title, styles.text)}>{product.name}</Text>
       <Text style={Object.assign({}, styles.price, styles.text)}>${product.price}</Text>
     </View>
@@ -25,6 +28,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 15,
     flex: 1,
+    maxWidth: '50%'
   },
   image: {
     width: '90%',
