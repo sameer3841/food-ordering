@@ -23,13 +23,14 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
     padding: 10,
-    borderRadius: 30
+    borderRadius: 15,
+    flex: 1,
   },
   image: {
     width: '90%',
     aspectRatio: 1,
     marginTop: 20,
-    marginHorizontal: 20
+    marginHorizontal: 13
   },
   title: {
     fontSize:18, 
@@ -42,5 +43,6 @@ const styles = StyleSheet.create({
   },
   text:{
     marginLeft: 10,
+    textAlign: 'center'
   }
 });
