@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-
+import Colors from '@/constants/Colors';
 import EditScreenInfo from '@components/EditScreenInfo';
 import { Text, View } from '@components/Themed';
 
@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+    color: Colors.light.tint
   },
   separator: {
     marginVertical: 30,
